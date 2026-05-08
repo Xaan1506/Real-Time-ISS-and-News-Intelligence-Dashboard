@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass {
+  @apply rounded-2xl border border-white/20 bg-white/8 shadow-2xl shadow-slate-900/20 backdrop-blur-xl;
+}
+
+.light .glass {
+  @apply border-slate-200/70 bg-white/70 shadow-slate-300/50;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-400/50;
+}
